@@ -41,5 +41,6 @@ Chosen option: "AWS using Lambda function, S3, and EventBridge Scheduler", becau
 
 ## Links
 
-* [Example Script](https://github.com/TawTek/MSP-Automation/blob/main/NinjaOne/Move-DeviceLocationPublicIP.ps1)
-* ![HLD](assets/IN-0001-ninjaone-device-location-update-script[redacted].png)
+[Example Script](https://github.com/TawTek/MSP-Automation/blob/main/NinjaOne/Move-DeviceLocationPublicIP.ps1)
+
+![HLD](assets/IN-0001-ninjaone-device-location-update-script[redacted].png)
