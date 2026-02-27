@@ -40,3 +40,7 @@ Chosen option: "Refactor to AWS-native solutions", because this approach would a
 
 * Cost increases while concurrent users is still small. Would need to determine critical threshold whereby cost of operation would reduce under decoupled approach vs single monolith.
 * Adds complexity, which may hinder developer's immediate ability to maintain codebase at first - CI/CD pipeline would need to be developed.
+
+### Links
+
+![HLD](./adrs/CN-0001-decouple-app-tiers[redacted].png)
