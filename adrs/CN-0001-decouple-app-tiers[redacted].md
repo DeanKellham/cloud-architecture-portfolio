@@ -43,4 +43,4 @@ Chosen option: "Refactor to AWS-native solutions", because this approach would a
 
 ### Links
 
-![HLD](./adrs/CN-0001-decouple-app-tiers[redacted].png)
+![HLD](./adrs/assets/CN-0001-decouple-app-tiers[redacted].png)
