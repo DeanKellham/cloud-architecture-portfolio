@@ -1,7 +1,9 @@
 # Dean Kellham | Cloud Architecture Portfolio
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue)](https://www.linkedin.com/in/deankellham)
-[![AWS](https://img.shields.io/badge/AWS-Solutions_Architect-FF9900)](#) ## 📌 Executive Summary
+[![AWS](https://img.shields.io/badge/AWS-Solutions_Architect-FF9900)](#)
+
+## 📌 Executive Summary
 I am a **Senior Cloud Solutions Architect** specializing in AWS infrastructure design, FinOps optimization, and legacy application modernization. 
 
 With a background that combines deep technical expertise, 14+ years of enterprise P&L management, and a BSc in Psychology, my focus is bridging the gap between complex technical risk and high-level business strategy. I design cloud environments that are not just technically sound, but financially optimized and strictly governed.
