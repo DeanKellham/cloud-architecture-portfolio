@@ -20,7 +20,7 @@ We need a way to consolidate authorisation down to a single secure account, with
 ## Considered Options
 
 * Retain account-specific IAM User accounts. Continues to present high admin labour.
-* Employ AWS IAM Identity Centre and AD Connector to use our on-premises Active Directory Domain identities. This would need to be deployed in each managed AWS Account. Rejected because customer accounts reside in their own AWS Organizations, making a centralized cross-organization Identity Center complex compared to a Hub-and-Spoke STS model.
+* Employ AWS IAM Identity Center and AD Connector to use our on-premises Active Directory Domain identities. This would need to be deployed in each managed AWS Account. Rejected because customer accounts reside in their own AWS Organizations, making a centralized cross-organization Identity Center complex compared to a Hub-and-Spoke STS model.
 * Employ Cross-account IAM Roles in managed AWS Accounts that can be assumed by IAM Users within [MSP]'s AWS Account. Use CloudFormation templates to standardise deployment of these IAM Roles. Use IAM Policies within [MSP]'s AWS Account to control access to customer AWS Accounts.
 
 ## Decision Outcome
