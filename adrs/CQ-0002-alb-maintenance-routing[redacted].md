@@ -53,4 +53,4 @@ graph TD
 
 ### Negative Consequences
 
-* The HTML payload is stored within the ALB rule, which has character limits. The maintenance page must be kept lightweight (inline CSS/minimal JS).
+* The HTML payload is stored within the ALB rule, which has tight character limits. The maintenance page must be kept lightweight (inline CSS/minimal JS).

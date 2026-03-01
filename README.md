@@ -22,12 +22,20 @@ To maintain client confidentiality, projects are prefixed by their anonymized en
 * **`[CN]`** - Client N (SaaS Property Tech)
 * **`[IN]`** - Internal MSP Infrastructure
 
-| Project & Link | Architecture Domain | Business Impact & Outcome |
-| :--- | :--- | :--- |
-| **[CQ-0001: RDS Cross-Generation Right-Sizing](./adrs/CQ-0001-aws-rds-downscaling[redacted].md)** | FinOps & Cost Optimization | Architected a data-driven migration from `m5` to `m7i` instances for a mission-critical logistics platform. Delivered a **47% ($30,000+) reduction in annual AWS spend** with zero negative impact on application performance. |
-| **[CN-0001: Monolith Decoupling & Modernization](./adrs/CN-0001-decouple-app-tiers[redacted].md)** | Migration & Security | Designed the modernization roadmap to decouple a high-risk legacy .NET/SQL monolith into a highly available, secure multi-tier architecture using **AWS Fargate (ECS), RDS, and S3**, successfully remediating critical public-facing security vulnerabilities. |
-| **[IN-0001: Serverless API Automation](./adrs/IN-0001-ninjaone-device-location-update-script[redacted].md)** | Serverless & Automation | Designed and deployed a serverless AWS footprint (**Lambda, EventBridge, S3**) to automate RMM API integrations, eliminating OS patching requirements and cutting ongoing operational compute costs to near-zero. |
-| **[IN-0002: Employing Cross-Account IAM Roles](./adrs/IN-0002-aws-iam-user-access[redacted].md)** | Security & Governance | Architected a secure, centralized Hub-and-Spoke IAM model using **AWS STS (sts:AssumeRole)** to govern cross-account access. Eliminated the security risk of decentralized, long-lived IAM user credentials across multiple client tenancies and significantly reduced administrative overhead. |
+Some Architecture Diagrams are provided. These will vary based on intended audience, and are denoted with the following:
+* **`🧜‍♀️`** - Mermaid.js Diagram (Code-based)
+* **`🖼️`** - Visio / Draw.io Diagram (Static Image)
+* **`❌`** - No HLD Available
+
+| Architecture Decision Record | Architecture Domain | Business Impact & Outcome | Architecture Diagram |
+| :--- | :--- | :--- | :--- |
+| **[CQ-0001: RDS Cross-Generation Right-Sizing](./adrs/CQ-0001-aws-rds-downscaling[redacted].md)** | FinOps & Cost Optimization | Architected a data-driven migration from `m5` to `m7i` instances for a mission-critical logistics platform. Delivered a **47% ($30,000+) reduction in annual AWS spend** with zero negative impact on application performance. | ❌
+| **[CQ-0002: Decoupling Maintenance Routing from Application Logic](./adrs/CQ-0002-alb-maintenance-routing[redacted].md)** | Migration & Security |  | 🧜‍♀️
+| **[CQ-0003: ](./adrs/CQ-0003)** |  |  | 🧜‍♀️
+| **[CQ-0004: ](./adrs/CQ-0004)** |  |  | 🧜‍♀️
+| **[CN-0001: Monolith Decoupling & Modernization](./adrs/CN-0001-decouple-app-tiers[redacted].md)** | Migration & Security | Designed the modernization roadmap to decouple a high-risk legacy .NET/SQL monolith into a highly available, secure multi-tier architecture using **AWS Fargate (ECS), RDS, and S3**, successfully remediating critical public-facing security vulnerabilities. | 🖼️
+| **[IN-0001: Serverless API Automation](./adrs/IN-0001-ninjaone-device-location-update-script[redacted].md)** | Serverless & Automation | Designed and deployed a serverless AWS footprint (**Lambda, EventBridge, S3**) to automate RMM API integrations, eliminating OS patching requirements and cutting ongoing operational compute costs to near-zero. | 🖼️
+| **[IN-0002: Employing Cross-Account IAM Roles](./adrs/IN-0002-aws-iam-user-access[redacted].md)** | Security & Governance | Architected a secure, centralized Hub-and-Spoke IAM model using **AWS STS (sts:AssumeRole)** to govern cross-account access. Eliminated the security risk of decentralized, long-lived IAM user credentials across multiple client tenancies and significantly reduced administrative overhead. | 🖼️
 
 *(Click the project links above to view the full Architecture Decision Records and associated High-Level Diagrams).*
 
