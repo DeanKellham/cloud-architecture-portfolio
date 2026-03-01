@@ -26,6 +26,10 @@ We need somewhere to host a small PowerShell / Python script that can be run on 
 
 Chosen option: "AWS using Lambda function, S3, and EventBridge Scheduler", because Lambda is perfectly suited for the <1 minute runtime of this simple script, the solution removes any reliance on our on-premises infrastructure (that we'd like to move away from), and the small footprint keeps this solution within Lambda's free tier.
 
+### Architecture Diagram
+![HLD](assets/IN-0001-ninjaone-device-location-update-script[redacted].png)
+
+
 ### Positive Consequences
 
 * Additional AWS exposure for colleagues
@@ -42,5 +46,3 @@ Chosen option: "AWS using Lambda function, S3, and EventBridge Scheduler", becau
 ## Links
 
 [Example Script](https://github.com/TawTek/MSP-Automation/blob/main/NinjaOne/Move-DeviceLocationPublicIP.ps1)
-
-![HLD](assets/IN-0001-ninjaone-device-location-update-script[redacted].png)

@@ -27,6 +27,10 @@ This decision is visualized in the High-Level Design (HLD) found in Appendix B o
 
 Chosen option: "Refactor to AWS-native solutions", because this approach would allow automatic scaling of Web and API tiers independently, while leveraging optimised tools for the database. Using Fargate and RDS would remove the need to maintain underlying compute resources. Leveraging S3 for blob storage over Azure would allow data to avoid having to traverse the public internet.
 
+### Architecture Diagram
+
+![HLD](./assets/CN-0001-decouple-app-tiers[redacted].png)
+
 ### Positive Consequences
 
 * Ability to scale and recover Web and API tiers independently.
@@ -40,7 +44,3 @@ Chosen option: "Refactor to AWS-native solutions", because this approach would a
 
 * Cost increases while concurrent users is still small. Would need to determine critical threshold whereby cost of operation would reduce under decoupled approach vs single monolith.
 * Adds complexity, which may hinder developer's immediate ability to maintain codebase at first - CI/CD pipeline would need to be developed.
-
-### Links
-
-![HLD](./assets/CN-0001-decouple-app-tiers[redacted].png)

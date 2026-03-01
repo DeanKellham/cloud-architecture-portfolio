@@ -27,6 +27,10 @@ We need a way to consolidate authorisation down to a single secure account, with
 
 Chosen Option: Cross-account IAM Roles. This creates a need for managing only 1 set of IAM Users (within [MSP]'s own AWS Account). Access to the relevant IAM Policies can be easily controlled via IAM User Groups that align with technician role and responsibility. Deploying relevant IAM Policies and IAM User Groups for each new customer AWS Account can be deployed within [MSP]'s AWS Account using a CloudFormation template. Deploying the relevant IAM Roles in customer AWS Accounts can also leverage CloudFormation templates for consistency and accuracy.
 
+### Architecture Diagram
+
+![HLD](assets/IN-0002-aws-iam-user-access[redacted].png)
+
 ### Positive Consequences
 
 * Complexity & Manageability: a single set of IAM User accounts ensures quick account restriction, and single set of credentials and MFA tokens for each technician, encouraging better password / security hygiene.
@@ -39,7 +43,3 @@ Chosen Option: Cross-account IAM Roles. This creates a need for managing only 1 
 ### Negative Consequences
 
 * Initial customer will need to run provided CloudFormation template once.
-
-### Links
-
-![HLD](assets/IN-0002-aws-iam-user-access[redacted].png)
