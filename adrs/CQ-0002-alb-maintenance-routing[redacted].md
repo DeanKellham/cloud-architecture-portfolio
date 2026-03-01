@@ -37,11 +37,11 @@ graph TD
     
     ALB --> |Evaluates Listener Rules| Rules{Rule Priority}
     
-    Rules -->|Priority 1: Active| Maint[Fixed Response: 503 Maintenance Page]
-    Rules -->|Priority 99: Default| App[Target Group: EC2 / ECS Compute]
+    Rules -->|Priority 1: Active| Maint[Fixed Response:<br>503 Maintenance Page]
+    Rules -->|Priority 99: Default| App[EC2 ASG Target Group:<br>Live Application]
     
-    style Maint fill:#f9d0c4,stroke:#e05252
-    style App fill:#d4edda,stroke:#28a745
+    style Maint stroke:#e05252
+    style App stroke:#28a745
 ````
 
 ### Positive Consequences
