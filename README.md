@@ -37,8 +37,6 @@ Some Architecture Diagrams are provided. These will vary based on intended audie
 | **[IN-0001: Serverless API Automation](./adrs/IN-0001-ninjaone-device-location-update-script[redacted].md)** | Serverless & Automation | Designed and deployed a serverless AWS footprint (**Lambda, EventBridge, S3**) to automate RMM API integrations, eliminating OS patching requirements and cutting ongoing operational compute costs to near-zero. | 🖼️
 | **[IN-0002: Employing Cross-Account IAM Roles](./adrs/IN-0002-aws-iam-user-access[redacted].md)** | Security & Governance | Architected a secure, centralized Hub-and-Spoke IAM model using **AWS STS (sts:AssumeRole)** to govern cross-account access. Eliminated the security risk of decentralized, long-lived IAM user credentials across multiple client tenancies and significantly reduced administrative overhead. | 🖼️
 
-*(Click the project links above to view the full Architecture Decision Records and associated High-Level Diagrams).*
-
 ---
 
 ## 🛠️ Core Competencies
